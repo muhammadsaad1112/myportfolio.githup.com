@@ -1,0 +1,82 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In</title>
+  <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+      <div id="navhead">
+      <div id="navbar">
+        <img src="https://navttc.gov.pk/AssetFiles/NAVTTC_PAKISTAN_White3.svg" alt="NAVTTC Logo">
+        <h2>National Vocational and Technical Training Commission</h2>
+      </div>
+</div>
+  <div id="container">
+    <div id="form1">
+      <form action="" method="post" id="myform">
+        <img src="logo.png" alt="Logo">
+        <h1>Sign In</h1>
+
+        <div class="form-group">
+          <label for="name">Username</label>
+          <input type="text" id="name" name="uname" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="uemail" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cnic">CNIC</label>
+          <input type="text" id="cnic" name="ucnic" maxlength="15" placeholder="12345-1234567-1"
+         class="form-control" required pattern="\d{5}-\d{7}-\d{1}" title="CNIC format must be 12345-1234567-1">
+        </div>
+
+        <div class="form-group">
+          <label for="pass">Password</label>
+          <input type="password" id="pass" name="upass" placeholder="Enter your password" required>
+        </div>
+
+        <div id="radios">
+          Gender:
+          <label for="radio1">Male</label>
+          <input type="radio" id="radio1" name="gender" value="Male" required>
+          <label for="radio2">Female</label>
+          <input type="radio" id="radio2" name="gender" value="Female">
+        </div>
+
+        <button type="submit" onclick="validateForm(event)">Sign In</button>
+        <div id="homepage">
+          <p>Go To Home Page</p>
+          <a href="index.html">Click Me!</a>
+        </div>
+      </form>
+    </div>
+  </div>
+<script src="form.js"></script>
+<script>
+document.getElementById("cnic").addEventListener("input", function(e) {
+  let value = e.target.value.replace(/\D/g, ''); // صرف digits رکھیں
+
+  // زیادہ سے زیادہ 13 digits allow کریں (1234512345671)
+  if (value.length > 13) {
+    value = value.slice(0, 13);
+  }
+
+  // CNIC کو فارمیٹ کریں 12345-1234567-1
+  if (value.length >= 13) {
+    value = value.slice(0, 5) + '-' + value.slice(5, 12) + '-' + value.slice(12);
+  } else if (value.length > 5 && value.length <= 12) {
+    value = value.slice(0, 5) + '-' + value.slice(5);
+  }
+
+  e.target.value = value;
+});
+</script>
+</body>
+</html>

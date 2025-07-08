@@ -1,0 +1,111 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    #container {
+      min-height: 100vh;
+      width: 100%;
+      background-color: rgb(38, 112, 72);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    form {
+      background-color: rgb(236, 230, 230);
+      border-radius: 10px;
+      padding: 30px 20px;
+      width: 100%;
+      max-width: 400px;
+      opacity: 0.95;
+      color: black;
+      text-align: center;
+    }
+
+    form img {
+      height: 100px;
+      margin-bottom: 15px;
+
+    }
+
+    form h1 {
+      color: rgb(38, 112, 72);
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size:larger;
+      color: rgb(38, 112, 72);
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 2px solid rgb(38, 112, 72);
+    }
+
+    #btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      border: none;
+      background-color: rgb(51, 139, 92);
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    #btn:hover {
+      background-color: rgb(3, 108, 150);
+    }
+
+    #siginpage {
+      margin-top: 20px;
+      font-size: 0.95em;
+      color: rgb(38, 112, 72);
+      padding-bottom :15px;
+    }
+
+    #siginpage a {
+      color: rgb(3, 108, 150);
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    #siginpage a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      form {
+        padding: 20px 15px;
+      }
+
+      form h1 {
+        font-size: 1.5em;
+      }
+
+      #btn {
+        font-size: 1em;
+      }
+    }

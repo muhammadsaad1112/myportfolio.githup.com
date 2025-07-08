@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Login Page</title>
+  <link rel="stylesheet" href="login.css"> <!-- Optional -->
+</head>
+<body>
+  <div id="container">
+    <form action="" method="post">
+      <img src="logo.png" alt="Logo" />
+      <h1>Login</h1>
+
+      <div class="form-group">
+        <label for="name">Username</label>
+        <input type="text" id="name" name="txtname" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="txtpass" placeholder="Enter your password" required />
+      </div>
+
+      <input type="submit" value="Login" name=submitbtn id="btn">
+
+      <div id="siginpage">
+        <p>Go To Sign in Page <a href="form1.php">Click Me!</a></p>
+      </div> 
+        <?php echo $message; ?>
+    </form>
+
+  
+  </div>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo">Saad</a>
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link">My Journey</a></li>
+          <li class="nav-item"><a href="#work" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- <i class="ri-close-line nav-close"></i> -->
+      </div>
+      <div class="nav-btns">
+        <i class="ri-sun-line change-theme" id="theme"></i>
+        <div class="nav-toggle"><i class="ri-menu-line"></i></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home-container container">
+        <div class="home-data">
+          <h1 class="home-title">Muhammad Saad</h1>
+          <h3 class="home-job">I am a web developer</h3>
+          <p class="home-description">
+            Crafting modern and responsive websites.
+            Blending clean design with powerful code.
+            Focused on speed, security, and usability.
+            Delivering seamless experiences across all devices.
+          </p>
+            <a href="#" class="button">My Work</a>
+
+          <div class="home-social">
+            <a href="http://www.linkedin.com/in/muhammad-saad-201782372" target="_blank" class="home-social-link" data-tooltip="LinkedIn">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+
+            <a href="https://www.fiverr.com/webvibesaad" target="_blank" class="home-social-link fiverr-icons"
+              data-tooltip="Fiverr">
+              <div class="fiverr-texts">
+                fiverr
+                <div class="fiverr-dots"></div>
+              </div>
+            </a>
+
+            <a href="https://www.github.com/muhammadsaad1112" target="_blank" class="home-social-link" data-tooltip="GitHub">
+              <i class="ri-github-fill"></i>
+            </a>
+          </div>
+
+
+        </div>
+        <div class="home-img-wrapper">
+          <img src="my image.png" alt="Profile Image" class="home-img">
+        </div>
+      </div>
+    </section>
+    <section class="about section" id="about">
+      <div class="about-container container">
+        <h2 class="section-title">ABOUT</h2>
+        <div class="about-experience">
+          <span class="about-no"><count-up>3</count-up></span>
+          <h3 class="about-title">Months of Experience</h3>
+        </div>
+
+        <div class="about-text">
+          <h2 class="about-description">
+            I am a passionate front-end developer focused on creating modern, responsive, and interactive websites. My
+            goal is to blend design and functionality to deliver seamless digital experiences.
+          </h2>
+          <a href="my cv.pdf" download class="button">Download CV</a>
+        </div>
+
+        <ul class="about-data">
+          <li class="about-item">
+            <h3 class="about-item-no"><count-up data-val="3">14</count-up>k</h3>
+            <p class="about-detail">Lines of Code</p>
+          </li>
+          <li class="about-item">
+            <h3 class="about-item-no"><count-up data-val="10">10</count-up>+</h3>
+            <p class="about-detail">Happy Clients</p>
+          </li>
+          <li class="about-item">
+            <h3 class="about-item-no"><count-up data-val="20">20</count-up>+</h3>
+            <p class="about-detail">Projects Completed</p>
+          </li>
+        </ul>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <h2 class="section-title">Services</h2>
+      <div class="services-container container grid">
+        <div class="service-item">
+          <i class="ri-code-line"></i>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-description">I build responsive and interactive websites.</p>
+        </div>
+        <div class="service-item">
+          <i class="ri-brush-line"></i>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-description">I design clean and modern user interfaces.</p>
+        </div>
+        <div class="service-item">
+          <i class="ri-smartphone-line"></i>
+          <h3 class="service-title">Mobile Friendly</h3>
+          <p class="service-description">Websites that look great on any device.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="skill-container section" id="skills">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-container container">
+        <div class="skills-group">
+          <h3 class="skills-title">Frontend Developer</h3>
+          <div class="skills-item grid">
+
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                  alt="HTML Logo" class="skills-img">
+              </div>
+              <h3 class="skills-name">HTML</h3>
+              <span class="skills-level">Intermediate</span>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                  alt="CSS Logo" class="skills-img">
+              </div>
+              <h3 class="skills-name">CSS</h3>
+              <span class="skills-level">Advanced</span>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                  alt="JavaScript Logo" class="skills-img">
+              </div>
+              <h3 class="skills-name">JavaScript</h3>
+              <span class="skills-level">Intermediate</span>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                  alt="React Logo" class="skills-img">
+              </div>
+              <h3 class="skills-name">React</h3>
+              <span class="skills-level">Basic</span>
+            </div>
+
+
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
+                  alt="Next.js Logo" class="skills-img">
+              </div>
+              <h3 class="skills-name">NextJS</h3>
+              <span class="skills-level">Advanced</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="skills-container container">
+        <div class="skills-group">
+          <h3 class="skills-title">Web Design</h3>
+          <div class="skills-item grid">
+
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
+                  alt="PHP Logo" class="skills-img">
+              </div>
+              <h3 class="skills-name">PHP</h3>
+              <span class="skills-level">Advanced</span>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js Logo" class="skills-img">
+              </div>
+              <h3 class="skills-name">NodeJs</h3>
+              <span class="skills-level">Advanced</span>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel Logo"
+                  class="skills-img">
+              </div>
+              <h3 class="skills-name">Laravel</h3>
+              <span class="skills-level">Intermediate</span>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+                  alt="MySQL Logo" class="skills-img">
+              </div>
+              <h3 class="skills-name">MYSQL</h3>
+              <span class="skills-level">Advanced</span>
+            </div>
+
+
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+                  alt="Express.js Logo" class="skills-img">
+              </div>
+              <h3 class="skills-name">ExpressJS</h3>
+              <span class="skills-level">Advanced</span>
+            </div>
+
+          </div>
+        </div>
+
+
+    </section>
+
+    <section class="section" id="resume">
+      <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
+      <div class="container">
+        <h2 class="section-title">My Journey</h2>
+
+        <div class="resume-container">
+          <div class="resume-timeline">
+
+            <!-- Education Item 1 -->
+            <div class="resume-item">
+              <div class="resume-content">
+                <div class="resume-icon">
+                  <i class="ri-graduation-cap-line"></i>
+                </div>
+                <span class="resume-date">2022 - 2024</span>
+                <h3 class="resume-title">Intermediate in Computer Science</h3>
+                <p class="resume-subtitle">Aspire group of college</p>
+                <p class="resume-description">
+                  Specialized in coding and web development,
+                  focusing on modern programming languages and frameworks.
+                </p>
+                <div class="resume-skills">
+                  <span class="skill-tag">SPORTS</span>
+                  <span class="skill-tag">SOCIAL ACTIVITIES</span>
+                  <span class="skill-tag">MUSIC</span>
+                  <!-- <span class="skill-tag"></span> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Item 1 -->
+            <div class="resume-item">
+              <div class="resume-content">
+                <div class="resume-icon">
+                  <i class="ri-briefcase-line"></i>
+                </div>
+                <span class="resume-date">2024 - Present</span>
+                <h3 class="resume-title">Frontend Developer</h3>
+                <p class="resume-subtitle">online study</p>
+                <p class="resume-description">
+                  A frontend developer skilled in HTML, CSS, and JavaScript, building user interfaces and experiences for web applications.
+                </p>
+                <div class="resume-skills">
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">CSS</span>
+                  <span class="skill-tag">JAVASCRIPT</span>
+                  <span class="skill-tag">BOOTSTRAP</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="resume-item">
+              <div class="resume-content">
+                <div class="resume-icon">
+                  <i class="ri-code-line"></i>
+                </div>
+                <span class="resume-date">2024</span>
+                <h3 class="resume-title">Backend Developer</h3>
+                <p class="resume-subtitle">CISD</p>
+                <p class="resume-description">
+                  Developed end-to-end web applications using modern tech stack.
+                  Built RESTful APIs and integrated third-party services.
+                </p>
+                <div class="resume-skills">
+                  <span class="skill-tag">PHP</span>
+                  <span class="skill-tag">MYSQL</span>
+                  <span class="skill-tag">LARAVEL</span>
+                  <!-- <span class="skill-tag">AWS</span> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Education Item 2 -->
+            <div class="resume-item">
+              <div class="resume-content">
+                <div class="resume-icon">
+                  <i class="ri-book-line"></i>
+                </div>
+                <span class="resume-date">2025</span>
+                <h3 class="resume-title">Web Development</h3>
+                <p class="resume-subtitle">COLLEGE OF INTERNATIONAL SKILL Development (sabzazar) </p>
+                <p class="resume-description">
+                  Completed comprehensive certification covering modern web development
+                  technologies and best practices.
+                </p>
+                <div class="resume-skills">
+                  <span class="skill-tag">Responsive Design</span>
+                  <span class="skill-tag">APIs</span>
+                  <span class="skill-tag">Testing</span>
+                  <span class="skill-tag">Deployment</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section" id="work">
+      <h2 class="section-title">PROJECTS</h2>
+      <div class="container">
+        <ul class="work-list">
+          <li class="work-item active-work" data-filter="all">All</li>
+          <li class="work-item" data-filter=".NAVTTC">NAVTTC CLONE</li>
+          <li class="work-item" data-filter=".AMAZON">AMAZON</li>
+          <li class="work-item" data-filter=".CRUD">CRUD APPLICATION</li>
+          <li class="work-item" data-filter=".FORM">FORM</li>
+        </ul>
+
+        <div class="work-container grid">
+          <div class="mix NAVTTC">
+            <article class="work-card">
+              <img src="navttc.png" class="work-img">
+              <h4 class="work-category">NAVTTC CLONE</h4>
+              <h3 class="work-title">SkillSphere</h3>
+              <p class="work-description">A vocational training platform similar to NAVTTC's model services.</p>
+              <a href="Navttc.html" class="work-link">Visit Project <i class="ri-arrow-right-line work-icon"></i></a>
+            </article>
+          </div>
+
+          <div class="mix AMAZON">
+            <article class="work-card">
+              <img src="amazon.jpeg" alt="" class="work-img">
+              <h4 class="work-category">Amazon</h4>
+              <h3 class="work-title">MarketHub</h3>
+              <p class="work-description">A global e-commerce platform offering various products and services.</p>
+              <a href="Amazon.html" class="work-link">Visit Project <i class="ri-arrow-right-line work-icon"></i></a>
+            </article>
+          </div>
+
+          <div class="mix CRUD">
+            <article class="work-card">
+              <img src="crud.png" alt="" class="work-img">
+              <h4 class="work-category">CRUD APPLICATION</h4>
+              <h3 class="work-title">Data Manager
+</h3>
+              <p class="work-description">A software system enabling create, read, update, delete data operations.</p>
+              <a href="crud.html" class="work-link">Visit Project <i class="ri-arrow-right-line work-icon"></i></a>
+            </article>
+          </div>
+
+          <div class="mix FORM">
+            <article class="work-card">
+              <img src="form-img.jpeg" alt="" class="work-img">
+              <h4 class="work-category">FORM</h4>
+              <h3 class="work-title">Application Form</h3>
+              <p class="work-description">A user interface component collecting and submitting user input data.</p>
+              <a href="sign.html" class="work-link">Visit Project <i class="ri-arrow-right-line work-icon"></i></a>
+            </article>
+          </div>
+
+          <div class="mix Photography">
+            <article class="work-card">
+              <img src="portfolio.jpeg" alt=""
+                class="work-img">
+              <h4 class="work-category">PORTFOLIO</h4>
+              <h3 class="work-title">Creative Portfolio</h3>
+              <p class="work-description">A collection of projects showcasing skills and professional experience.</p>
+              <a href="#" class="work-link">Visit Project <i class="ri-arrow-right-line work-icon"></i></a>
+            </article>
+          </div>
+
+          <div class="mix Branding">
+            <article class="work-card">
+              <img src="task.jpeg" alt="" class="work-img">
+              <h4 class="work-category">Task Manager</h4>
+              <h3 class="work-title">TaskFlow</h3>
+              <p class="work-description">A task manager efficiently organizes and tracks tasks.</p>
+              <a href="task.html" class="work-link">Visit Project <i class="ri-arrow-right-line work-icon"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-container container grid">
+
+        <!-- Contact Info -->
+        <div class="contact-group">
+          <h2 class="section-title contact-section-title">Let's Talk About Your Project</h2>
+          <div class="contact-data grid">
+
+            <div class="contact-item pad">
+              <span class="contact-icon"><i class="ri-mail-open-fill"></i></span>
+              <div>
+                <h3 class="contact-title">E-mail</h3>
+                <p class="contact-description">saadqayyum1112@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item pad">
+              <span class="contact-icon"><i class="ri-phone-fill"></i></span>
+              <div>
+                <h3 class="contact-title">Phone</h3>
+                <p class="contact-description">03373334102</p>
+              </div>
+            </div>
+
+            <div class="contact-item pad">
+              <span class="contact-icon"><i class="ri-map-pin-2-fill"></i></span>
+              <div>
+                <h3 class="contact-title">Location</h3>
+                <p class="contact-description"> Lahore</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form grid" id="contact-form">
+          <div class="contact-form-div">
+            <label class="contact-label">Name</label>
+            <input type="text" name="name" class="contact-input" id="contact-name">
+          </div>
+
+          <div class="contact-form-div">
+            <label class="contact-label">Email</label>
+            <input type="email" name="email" class="contact-input" id="contact-email">
+          </div>
+
+          <div class="contact-form-div">
+            <label class="contact-label">Message</label>
+            <textarea name="message" class="contact-input contact-area" id="contact-message"></textarea>
+          </div>
+
+          <p class="contact-message" id="message"></p>
+          <button type="submit" class="button contact-button">Send Message</button>
+        </form>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container container">
+
+        <div class="home-social">
+          <a href="http://www.linkedin.com/in/muhammad-saad-201782372" target="_blank" class="footer-link"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://www.fiverr.com/webvibesaad" target="_blank">
+            <div class="fiverr-icon footer-link">
+              <div class="fiverr-text">
+                fiverr
+                <div class="fiverr-dot"></div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.github.com/muhammadsaad1112" target="_blank" class="footer-link"><i class="ri-github-fill"></i></a>
+        </div>
+
+        <p class="footer-copyright">2024 saad. All Right Reserved</p>
+        <p class="footer-copyright">Development by <span>saad</span></p>
+
+      </div>
+    </footer>
+
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script type="module"
+    src="https://cdn.jsdelivr.net/gh/lekoala/formidable-elements@master/dist/count-up.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+
+
+
+
+</body>
+
+</html>
